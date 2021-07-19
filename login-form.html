@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <form id="form" action="#" method="POST" class="nm-form-2" th:action="@{/auth}">
+        <div class="nm-form-inner">
+            <a th:href="@{/}"><div id="form-logo" class="nm-form-logo"></div></a>
+            <input class="nm-input"type="text" name="username" id="username" placeholder="username"/><br/>
+    
+            <input class="nm-input" type="password" name="password" id="password" placeholder="Password"/><br/>
+    
+            <input class="nm-btn form-btn" type="submit" value="Login"/>
+        </div>
+    </form>
+</body>
+</html>
